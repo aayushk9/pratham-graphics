@@ -8,11 +8,13 @@ app.get('/', (req, res) => {
 })        
 
 app.get('/designing', (req, res) => {  
-
+  const filePath = path.join(__dirname, '../client/pages/design.html');
+  res.sendFile(filePath);
 });
 
 app.get('/printing', (req, res) => {
-
+  const filePath = path.join(__dirname, '../client/pages/printing.html');
+  req.sendFile(filePath);
 });
 
 app.listen(3000, (req, res) => {
