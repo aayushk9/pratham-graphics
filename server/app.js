@@ -14,7 +14,7 @@ app.get('/designing', (req, res) => {
 
 app.get('/printing', (req, res) => {
   const filePath = path.join(__dirname, '../client/pages/printing.html');
-  req.sendFile(filePath);
+  res.sendFile(filePath);
 });
 
 app.listen(3000, (req, res) => {
