@@ -18,7 +18,7 @@ app.get('/design', (req, res) => {
 
 app.get('/printing', (req, res) => {
   const filePath = path.join(__dirname, '../client/pages/printing.html');
-  res.sendFile(filePath);  
+  req.sendFile(filePath);
 });
 
 function getHtmlContent(filePath, apiKey) {
@@ -30,4 +30,4 @@ function getHtmlContent(filePath, apiKey) {
 
 app.listen(3000, (req, res) => {   
     console.log('Server is listening on port 3000');
-});
+})  

@@ -1,85 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>prathamgraphics</title>
-    <style>
-      body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-      }
+<html>
 
-      .navbar {
-          background-color: #333;
-          color: white;
-          padding: 10px;
-          text-align: center;
-      }
+    <head>
+      <title>prathamgraphics</title>
+    </head>
 
-      .content {
-          text-align: center;
-          margin-top: 20px;
-      }
+    <body>
 
-      #map {
-          height: 400px;
-          width: 100%;
-          border: 1px solid #ccc;
-      }
-  </style> 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=initMap"></script> 
-   
-</head>
-<body>
-    <div class="navbar">
-        <span>prathamgraphics</span>
-        <span><a href="./design">designing</a></span> 
-        <span><a href="./printing">printing</a></span>  
-    </div>
-    <br>
-    <br>
-    <div class="content">
-        <center>
-            <h3>All types of designing and printing solutions</h3>
-        </center>
-        <br>
-        <br>
-        <br>
-        <span><a href="./printing">Printing</a></span>
-        <span><a href="./design">Designing</a></span>    
-    </div>
-    <br>
-    <br>
-    <div id="map"></div>
-    <br>
-    <br>
-    <br>
-    <div class="contact-form">
-      <center>
-        <span>mail</span>
-        <span>Phone number</span> 
-      </center>
-    </div>
-    <script>
-        // Define initMap globally
-        function initMap() {
-            // Set the initial coordinates for the map  
-            var myLatLng = { lat: 18.463048614794147, lng: 73.85777399335474 };  
-        
-            // Create a new map
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: myLatLng,
-                zoom: 8
-            });
-        
-            // Add a marker to the map
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Pratham graphics'
-            });
-        }
-    </script>
-</body>
-</html>
- 
+      <div class="navbar">
+       <span>prathamgraphics</span>
+       <span><a href="./design.html">designing</a></span>
+       <span><a href="./printing.html">printing</a></span>
+      </div>
+
+    </body>
+</html>     
